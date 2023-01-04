@@ -4,6 +4,8 @@ Containerized development environments for use with VSCode utilizing Docker
 
 ## Setup
 
+### Docker
+
 In order to use these environments, you must have Docker installed on your system:
 >`sudo apt install docker.io`
 
@@ -12,7 +14,11 @@ In order to use these environments, you must have Docker installed on your syste
 Add your user to the docker group:
 >`sudo usermod -aG docker <username>`
 
+### VSCode
+
 Install the [Dev Containers](ms-vscode-remote.remote-containers) extension for VSCode
+
+### Host Environment
 
 Each containerized environment has it's own environment variable that it uses to create a shared directory in order to access your code without storing the code in the container. That ensure that you can always create a new fresh environment if you break something without ever risking losing data. You need to set that environment variable to the path to your repo's source code.
 
