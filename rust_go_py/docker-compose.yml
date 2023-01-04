@@ -1,8 +1,8 @@
 services:
     server:
-        container_name: dev
-        image: devimg
+        container_name: rgp
+        image: rpg_img
         ports:
             - "4570:4570"
         volumes:
-            - "${DRIVE_SYNC_DIR}/src:/repo/src"
+            - "${RGP_REPO_DIR}/src:/repo/src"

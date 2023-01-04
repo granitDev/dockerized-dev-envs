@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-LABEL "owner"="bmarzolf@globusmedical.com"
+LABEL "owner"="<your@email.here>"
 
 ARG GO_VERSION="1.19.4"
 

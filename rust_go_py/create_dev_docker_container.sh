@@ -1,5 +1,5 @@
-docker stop dev
-docker rm dev
-docker rmi devimg
-docker build . -t devimg
+docker stop rgp
+docker rm rgp
+docker rmi rgpimg
+docker build . -t rgpimg
 docker-compose up
