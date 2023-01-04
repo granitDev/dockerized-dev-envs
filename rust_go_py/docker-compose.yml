@@ -1,0 +1,8 @@
+services:
+    server:
+        container_name: dev
+        image: devimg
+        ports:
+            - "4570:4570"
+        volumes:
+            - "${DRIVE_SYNC_DIR}/src:/repo/src"
