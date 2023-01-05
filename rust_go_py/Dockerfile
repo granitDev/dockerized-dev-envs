@@ -60,7 +60,9 @@ RUN cd /tmp \
     && mv go /usr/local \
     && mkdir -p /root/bin \
     && mkdir -p /root/pkg \
-    && mkdir -p /root/src 
+    && mkdir -p /root/src
+    
+RUN go install -v golang.org/x/tools/gopls@latest
 
 # This entrypoint keeps the container running, otherwise it will exit immediately
 ENTRYPOINT [ "tail", "-f", "/dev/null" ]
